@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शिक्षकांचा अभिप्राय फॉर्म</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>शिक्षकांचा अभिप्राय</h1>
+        <h2>नाशिक एज्युकेशन सोसायटी, नाशिक</h2>
+        
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="schoolName">शाळेचे नाव:</label>
+                <select id="schoolName" name="schoolName" required>
+                    <option value="" disabled selected>शाळा निवडा</option>
+                    <option value="मराठी माध्यमाचे प्राथमिक विद्यालय, जुने सिडको, नाशिक">मराठी माध्यमाचे प्राथमिक विद्यालय, जुने सिडको, नाशिक</option>
+                    <option value="ति. झ. विद्यामंदिर, भगूर">ति. झ. विद्यामंदिर, भगूर</option>
+                    <option value="माध्यमिक विद्यालय, उंटवाडी">माध्यमिक विद्यालय, उंटवाडी</option>
+                    <option value="प्राथमिक विद्यालय उंटवाडी, सिडको, नाशिक">प्राथमिक विद्यालय उंटवाडी, सिडको, नाशिक</option>
+                    <option value="पेठे विद्यालय, नाशिक">पेठे विद्यालय, नाशिक</option>
+                    <option value="सागरमल मोदी प्राथमिक शिक्षण मंदिर, नाशिक">सागरमल मोदी प्राथमिक शिक्षण मंदिर, नाशिक</option>
+                    <option value="सी.डी.ओ. मेरी हायस्कूल, मेरी कॉलनी, नाशिक">सी.डी.ओ. मेरी हायस्कूल, मेरी कॉलनी, नाशिक</option>
+                    <option value="नवीन इंग्रजी शाळा, ओझर (मिग)">नवीन इंग्रजी शाळा, ओझर (मिग)</option>
+                    <option value="मातोश्री रामप्यारीबाई सारडा कन्या विद्या मंदिर, नाशिक">मातोश्री रामप्यारीबाई सारडा कन्या विद्या मंदिर, नाशिक</option>
+                    <option value="डी. एस. कोठारी कन्या शाळा, नाशिक रोड">डी. एस. कोठारी कन्या शाळा, नाशिक रोड</option>
+                    <option value="कमलावती कोठारी मुलींची प्राथमिक शाळा, नाशिक रोड">कमलावती कोठारी मुलींची प्राथमिक शाळा, नाशिक रोड</option>
+                    <option value="CDO Mary English Medium School, Untwadi">CDO Mary English Medium School, Untwadi</option>
+                    <option value="Smt. Rangubai Junnare English Medium Primary School">Smt. Rangubai Junnare English Medium Primary School</option>
+                    <option value="Smt. Rangubai Junnare English Medium Secondary School">Smt. Rangubai Junnare English Medium Secondary School</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="teacherName">शिक्षकांचे नाव:</label>
+                <input type="text" id="teacherName" name="teacherName" required>
+            </div>
+            <div class="form-group inline-group">
+                <label for="mobileNumber">मोबाईल नंबर:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+                <label for="designation">हुद्दा:</label>
+                <input type="text" id="designation" name="designation" required>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>मुद्दा क्रमांक</th>
+                        <th>स्कूल मास्टर मधील घटक</th>
+                        <th>प्रशिक्षण मिळाले का? (होय/नाही)</th>
+                        <th>वापर करता का? (होय/नाही)</th>
+                        <th>वापरत नसल्यास कारण</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>स्वतःची माहिती अपडेट केली आहे का?</td>
+                        <td><select name="q1_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q1_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q1_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>वर्गातील सर्व विद्यार्थ्यांची माहिती अपडेट केली आहे का?</td>
+                        <td><select name="q2_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q2_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q2_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>वर्गाचा पट आज रोजी बरोबर आहे काय?</td>
+                        <td><select name="q3_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q3_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q3_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>नवीन विद्यार्थ्याची माहिती भरणे</td>
+                        <td><select name="q4_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q4_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q4_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>विद्यार्थी माहिती अपडेट करणे</td>
+                        <td><select name="q5_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q5_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q5_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>विद्यार्थी नाव पटावरून कमी करणे</td>
+                        <td><select name="q6_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q6_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q6_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>वर्गातील एकूण विद्यार्थी संख्या पाहणे</td>
+                        <td><select name="q7_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q7_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q7_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>जातीनिहाय विद्यार्थी संख्या पाहणे</td>
+                        <td><select name="q8_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q8_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q8_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>दैनदिन हजेरी भरता काय?</td>
+                        <td><select name="q9_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q9_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q9_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>मासिक कॅटलॉग प्रिंट करता का?</td>
+                        <td><select name="q10_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q10_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q10_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>प्रथम सत्राचा निकाल सोफ्टवेअर मध्ये तयार केला का?</td>
+                        <td><select name="q11_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q11_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q11_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>विद्यार्थी यादी प्रिंट करता येते का?</td>
+                        <td><select name="q12_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q12_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q12_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>विद्यार्थी profile पाहता येते का?</td>
+                        <td><select name="q13_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q13_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q13_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>विद्यार्थी ओळखपत्र पाहता करता येते का?</td>
+                        <td><select name="q14_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q14_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q14_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>विद्यार्थी / पालक यांना मोबाईल App दिले का?</td>
+                        <td><select name="q15_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q15_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q15_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>विद्यार्थी / पालक मोबाईल App वापरता काय?</td>
+                        <td><select name="q16_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q16_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q16_reason"></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>स्कूल मास्टर टिम कडून समाधानकारक सपोर्ट मिळतो का?</td>
+                        <td><select name="q17_training"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><select name="q17_usage"><option value="होय">होय</option><option value="नाही">नाही</option></select></td>
+                        <td><input type="text" name="q17_reason"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="form-group">
+                <label>स्कूल मास्टर सोफ्टवेअर ला आपण 5 पैकी किती गुण (Rating) द्याल:</label>
+                <select name="rating" required>
+                    <option value="सर्वोत्तम" selected>सर्वोत्तम</option>
+                    <option value="उत्तम">उत्तम</option>
+                    <option value="चांगले">चांगले</option>
+                    <option value="सामान्य">सामान्य</option>
+                    <option value="वाईट">वाईट</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="suggestions">काही मार्गदर्शक सूचना असल्यास:</label>
+                <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">सबमिट करा</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
